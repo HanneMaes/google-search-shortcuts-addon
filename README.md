@@ -1,4 +1,4 @@
-# Google Search Shortcuts <small style="color:lightgrey">FireFox addon</small>
+# Google Search Shortcuts addon
 Adds shortcuts to the Google Search results.
 
 <img src="screenshot.png">
