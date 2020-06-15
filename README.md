@@ -1,6 +1,11 @@
 <img src="Google Search Shortcuts logo.png">
-A browser add-on that adds shortcuts to the Google Search results.<br><br>
 
+# What is it?
+A browser add-on that adds shortcuts to the Google Search results.<br>
+Get the Firefox addon: <a href="https://addons.mozilla.org/nl/firefox/addon/google-searchresults-shortcuts/">https://addons.mozilla.org/nl/firefox/addon/google-searchresults-shortcuts/</a>
+<br><br>
+
+# What does it look like?
 <img src="Google Search Shortcutsscreenshot.png">
 
 # Testing
