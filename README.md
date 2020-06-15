@@ -1,7 +1,7 @@
-# Google Search Shortcuts addon
-Adds shortcuts to the Google Search results.
+<img src="Google Search Shortcuts logo.png">
+A browser add-on that adds shortcuts to the Google Search results.<br><br>
 
-<img src="screenshot.png">
+<img src="Google Search Shortcutsscreenshot.png">
 
 # Testing
 1. about:debugging

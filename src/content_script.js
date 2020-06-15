@@ -4,6 +4,62 @@ console.log('-----------------------')
 
 var searchResults = []
 
+// add the styling to the page
+document.head.innerHTML = document.head.innerHTML + `
+<link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet"> 
+<style>
+  .googleSearchResultsShortcut, .googleSearchResultsShortcut::after {
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: default;
+  }
+  
+  .googleSearchResultsShortcut {
+    /* positioning */
+    position: absolute;
+    right: 20px;
+    top: 0px;
+
+    /* size */
+    width: 20px;
+    height: 20px;
+  
+    /* background */
+    background-color: white;
+    border-radius: 5px;
+
+    /* typography */
+    font-family: 'Nova Mono', monospace;
+    color: black;
+  
+    /* center text */
+    text-align: center;
+    line-height: 19px;
+  }
+  
+  .googleSearchResultsShortcut::after {
+    content: '';
+    display: block;
+    
+    /* draw this underneath the div */
+    z-index: -1;
+    
+    /* size */
+    width: 20px;
+    height: 20px;
+    
+    /* positioning */
+    position: relative;
+    left: -2px;
+    top: -15px;
+    
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+  }
+</style>
+`
+console.log("--------> document.head.innerHTML:", document.head.innerHTML);
+
 // get the search result HTML code
 var results = document.getElementsByClassName("g")
 Object.keys(results).forEach(function (item) {  
@@ -32,23 +88,7 @@ for (var i in searchResults) {
 
     searchResults[i].html.innerHTML = `
       <div style="position: relative; width: 0; height: 0; overfow: visible;">
-        <div style="
-          position: absolute;
-          right: 20px;
-          top: 0px;
-          width: 20px;
-          height: 20px;
-          border-radius: 5px;
-          background-color: black;
-
-          color: white;
-          font-weight: bold;
-          
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-        ">` + parseInt(parseInt(i, 10) + 1, 10) + `</div>
+        <div class="googleSearchResultsShortcut">` + parseInt(parseInt(i, 10) + 1, 10) + `</div>
       </div>
     ` + searchResults[i].html.innerHTML
     
