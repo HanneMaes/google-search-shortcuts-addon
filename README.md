@@ -6,7 +6,7 @@ Get the Firefox addon: <a href="https://addons.mozilla.org/nl/firefox/addon/goog
 <br><br>
 
 # What does it look like?
-<img src="Google Search Shortcutsscreenshot.png">
+<img src="Google Search Shortcuts screenshot.png">
 
 # Testing
 1. about:debugging
